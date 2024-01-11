@@ -1,0 +1,136 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'PT Sans', sans-serif;}
+
+.header{
+    width: 100%;
+    position: relative;
+}
+
+.netflixLogo {
+    position: absolute;
+    top: -8%;
+    margin-left: 30px;;
+}
+
+nav ul {
+    list-style-type: none; /* 리스트 스타일 제거 */
+    padding:0; /* 기본 패딩 제거 */
+    margin-left: 150px;
+    display: flex; /* 가로 정렬을 위한 플렉스 박스 적용 */
+    align-items: center; /* 세로 중앙 정렬 */
+
+}
+
+nav li {
+    display: inline; /* 리스트 항목을 인라인 요소로 변경 */
+    padding: 5px 10px; /* 항목의 패딩 설정 */
+}
+
+nav li:hover {
+    /* 마우스 오버 시 스타일 추가 가능 */
+    background-color: gray;
+}
+
+
+.moneyheist img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: 50% 70%;
+
+}
+
+.movieInfo {
+    position: absolute;
+    margin-left: 10px;
+    top: 40%;
+}
+
+.movieInfo .title {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+
+.movieInfo p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+
+
+.btn2 {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color : rgba(59, 59, 59, 0.241);
+    color: rgb(214, 214, 214);
+    border-width: 0.5px;
+    padding-right: 20px;
+    border-radius: 3px;
+}
+
+.btn2:hover {
+    background-color : rgba(247, 247, 247, 0.138);
+    color: rgb(230, 230, 230);
+}
+
+/*  */
+
+.btn1 {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color : rgba(255, 255, 255, 0.955);
+    color: rgb(39, 39, 39);
+    border-width: 0.5px;
+    padding-right: 30px;
+    border-radius: 3px;
+}
+
+.btn1:hover {
+    background-color : rgb(27, 27, 27);
+    color: rgb(255, 255, 255);
+}
+
+
+
+.movieLists p {
+    font-size: 20px;
+}
+
+/* 그리드 부분 8개씩 한줄로 */
+.movieGrids {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(8, minmax(100px, auto));
+    grid-gap: 5px;
+
+}
+
+img {
+    width: 150px;;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+.movieGrids img:hover {
+    transform: scale(1.5);
+}
+
+
+@media (max-width:968px) {
+
+    .movieGrids {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, minmax(100px, auto));
+        grid-gap: 10px;
+    
+    }
+
+}
